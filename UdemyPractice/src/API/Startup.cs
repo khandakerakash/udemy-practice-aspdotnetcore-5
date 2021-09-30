@@ -1,5 +1,6 @@
 using BLL.BllDependency;
 using DLL.DllDependency;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -22,6 +23,7 @@ namespace API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers()
+                .AddFluentValidation()
                 .AddNewtonsoftJson(options =>
                     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
                 );
