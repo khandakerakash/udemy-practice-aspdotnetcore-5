@@ -5,18 +5,16 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.2.2" />
         <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.2.1" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.2.2" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.10" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.10" />
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\BLL\BLL.csproj" />
       <ProjectReference Include="..\DLL\DLL.csproj" />
     </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Controllers" />
-    </ItemGroup>
-
-
+    
 </Project>
