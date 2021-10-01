@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using BLL.Model.Request;
-using BLL.Model.Response;
+using BLL.Request;
 using DLL.Model;
 using DLL.Repository;
 using DLL.UoW;
@@ -13,8 +12,8 @@ namespace BLL.Services
     {
         Task<List<Department>> GetAllAsync();
         Task<Department> GetAAsync(string code);
-        Task<Department> InsertAsync(InsertDepartmentReqModel reqModel);
-        Task<Department> Update(string code, UpdateDepartmentReqModel reqModel);
+        Task<Department> InsertAsync(InsertDepartmentRequestModel reqModel);
+        Task<Department> Update(string code, UpdateDepartmentRequestModel reqModel);
         Task<Department> Delete(string code);
     }
 
@@ -39,7 +38,7 @@ namespace BLL.Services
             return await _departmentRepository.FirstOrDefaultAsync(x => x.Code == code);
         }
 
-        public async Task<Department> InsertAsync(InsertDepartmentReqModel reqModel)
+        public async Task<Department> InsertAsync(InsertDepartmentRequestModel reqModel)
         {
             var department = new Department()
             {
@@ -53,7 +52,7 @@ namespace BLL.Services
             return department;
         }
 
-        public async Task<Department> Update(string code, UpdateDepartmentReqModel reqModel)
+        public async Task<Department> Update(string code, UpdateDepartmentRequestModel reqModel)
         {
             var department = await _departmentRepository.FirstOrDefaultAsync(x => x.Code == code);
             var updateDepartment = new Department()

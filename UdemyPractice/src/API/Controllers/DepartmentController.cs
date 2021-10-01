@@ -1,7 +1,7 @@
 ﻿
 using BLL.Services;
 using System.Threading.Tasks;
-using BLL.Model.Request;
+using BLL.Request;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
@@ -28,13 +28,13 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Insert(InsertDepartmentReqModel reqModel)
+        public async Task<IActionResult> Insert(InsertDepartmentRequestModel reqModel)
         {
             return Ok(await _departmentService.InsertAsync(reqModel));
         }
 
         [HttpPut("{code}")]
-        public async Task<IActionResult> Update(string code, UpdateDepartmentReqModel reqModel)
+        public async Task<IActionResult> Update(string code, UpdateDepartmentRequestModel reqModel)
         {
             return Ok(await _departmentService.Update(code, reqModel));
         }
