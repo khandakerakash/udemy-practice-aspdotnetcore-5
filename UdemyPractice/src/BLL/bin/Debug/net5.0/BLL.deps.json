@@ -11,7 +11,8 @@
           "DLL": "1.0.0",
           "FluentValidation.AspNetCore": "10.3.3",
           "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "Utils": "1.0.0"
         },
         "runtime": {
           "BLL.dll": {}
@@ -978,6 +979,11 @@
         "runtime": {
           "DLL.dll": {}
         }
+      },
+      "Utils/1.0.0": {
+        "runtime": {
+          "Utils.dll": {}
+        }
       }
     }
   },
@@ -1667,6 +1673,11 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "DLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Utils/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

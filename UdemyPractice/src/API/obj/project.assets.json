@@ -1543,7 +1543,8 @@
           "DLL": "1.0.0",
           "FluentValidation.AspNetCore": "10.3.3",
           "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "Utils": "1.0.0"
         },
         "compile": {
           "bin/placeholder/BLL.dll": {}
@@ -1565,6 +1566,16 @@
         },
         "runtime": {
           "bin/placeholder/DLL.dll": {}
+        }
+      },
+      "Utils/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Utils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Utils.dll": {}
         }
       }
     }
@@ -5740,6 +5751,11 @@
       "type": "project",
       "path": "../DLL/DLL.csproj",
       "msbuildProject": "../DLL/DLL.csproj"
+    },
+    "Utils/1.0.0": {
+      "type": "project",
+      "path": "../Utils/Utils.csproj",
+      "msbuildProject": "../Utils/Utils.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5750,7 +5766,8 @@
       "Microsoft.AspNetCore.Mvc.Versioning >= 5.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.10",
       "Swashbuckle.AspNetCore.SwaggerGen >= 6.2.2",
-      "Swashbuckle.AspNetCore.SwaggerUI >= 6.2.1"
+      "Swashbuckle.AspNetCore.SwaggerUI >= 6.2.1",
+      "Utils >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5783,6 +5800,9 @@
             },
             "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\DLL\\DLL.csproj": {
               "projectPath": "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\DLL\\DLL.csproj"
+            },
+            "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\Utils\\Utils.csproj": {
+              "projectPath": "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\Utils\\Utils.csproj"
             }
           }
         }

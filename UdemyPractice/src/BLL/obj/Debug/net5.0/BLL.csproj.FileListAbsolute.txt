@@ -13,3 +13,5 @@ E:\Practices\Repos\udemy-practice-aspdotnetcore-5\UdemyPractice\src\BLL\obj\Debu
 E:\Practices\Repos\udemy-practice-aspdotnetcore-5\UdemyPractice\src\BLL\obj\Debug\net5.0\BLL.dll
 E:\Practices\Repos\udemy-practice-aspdotnetcore-5\UdemyPractice\src\BLL\obj\Debug\net5.0\ref\BLL.dll
 E:\Practices\Repos\udemy-practice-aspdotnetcore-5\UdemyPractice\src\BLL\obj\Debug\net5.0\BLL.pdb
+E:\Practices\Repos\udemy-practice-aspdotnetcore-5\UdemyPractice\src\BLL\bin\Debug\net5.0\Utils.dll
+E:\Practices\Repos\udemy-practice-aspdotnetcore-5\UdemyPractice\src\BLL\bin\Debug\net5.0\Utils.pdb

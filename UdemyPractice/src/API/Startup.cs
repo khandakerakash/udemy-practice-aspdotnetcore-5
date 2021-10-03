@@ -1,3 +1,4 @@
+using API.AppMiddleware;
 using BLL.BllDependency;
 using DLL.DllDependency;
 using FluentValidation.AspNetCore;
@@ -47,6 +48,8 @@ namespace API
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1"));
             }
 
+            app.UseMiddleware<ExceptionMiddleware>();
+            
             app.UseHttpsRedirection();
 
             app.UseRouting();

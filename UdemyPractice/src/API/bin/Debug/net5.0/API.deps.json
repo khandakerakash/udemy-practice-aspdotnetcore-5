@@ -40,6 +40,7 @@
           "Microsoft.EntityFrameworkCore.Design": "5.0.10",
           "Swashbuckle.AspNetCore.SwaggerGen": "6.2.2",
           "Swashbuckle.AspNetCore.SwaggerUI": "6.2.1",
+          "Utils": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -1394,7 +1395,8 @@
           "DLL": "1.0.0",
           "FluentValidation.AspNetCore": "10.3.3",
           "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "Utils": "1.0.0"
         },
         "runtime": {
           "BLL.dll": {}
@@ -1414,6 +1416,14 @@
         },
         "compile": {
           "DLL.dll": {}
+        }
+      },
+      "Utils/1.0.0": {
+        "runtime": {
+          "Utils.dll": {}
+        },
+        "compile": {
+          "Utils.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -3837,6 +3847,11 @@
       "sha512": ""
     },
     "DLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Utils/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

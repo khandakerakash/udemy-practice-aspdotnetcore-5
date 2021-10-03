@@ -1534,6 +1534,16 @@
         "runtime": {
           "bin/placeholder/DLL.dll": {}
         }
+      },
+      "Utils/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Utils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Utils.dll": {}
+        }
       }
     }
   },
@@ -5801,6 +5811,11 @@
       "type": "project",
       "path": "../DLL/DLL.csproj",
       "msbuildProject": "../DLL/DLL.csproj"
+    },
+    "Utils/1.0.0": {
+      "type": "project",
+      "path": "../Utils/Utils.csproj",
+      "msbuildProject": "../Utils/Utils.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5808,7 +5823,8 @@
       "DLL >= 1.0.0",
       "FluentValidation.AspNetCore >= 10.3.3",
       "Microsoft.Extensions.Configuration.Abstractions >= 5.0.0",
-      "Microsoft.Extensions.DependencyInjection.Abstractions >= 5.0.0"
+      "Microsoft.Extensions.DependencyInjection.Abstractions >= 5.0.0",
+      "Utils >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5838,6 +5854,9 @@
           "projectReferences": {
             "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\DLL\\DLL.csproj": {
               "projectPath": "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\DLL\\DLL.csproj"
+            },
+            "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\Utils\\Utils.csproj": {
+              "projectPath": "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\Utils\\Utils.csproj"
             }
           }
         }

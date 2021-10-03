@@ -17,6 +17,9 @@
         "projectReferences": {
           "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\DLL\\DLL.csproj": {
             "projectPath": "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\DLL\\DLL.csproj"
+          },
+          "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\Utils\\Utils.csproj": {
+            "projectPath": "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\Utils\\Utils.csproj"
           }
         }
       }
