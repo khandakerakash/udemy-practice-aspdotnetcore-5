@@ -12,9 +12,11 @@ namespace BLL.Services
     {
         Task<List<Department>> GetAllAsync();
         Task<Department> GetAAsync(string code);
-        Task<Department> InsertAsync(InsertDepartmentRequestModel reqModel);
-        Task<Department> Update(string code, UpdateDepartmentRequestModel reqModel);
+        Task<Department> InsertAsync(DepartmentInsertRequestModel request);
+        Task<Department> Update(string code, DepartmentUpdateRequestModel request);
         Task<Department> Delete(string code);
+        Task<bool> IsCodeExists(string code);
+        Task<bool> IsNameExists(string name);
     }
 
     public class DepartmentService : IDepartmentService
@@ -38,12 +40,12 @@ namespace BLL.Services
             return await _departmentRepository.FirstOrDefaultAsync(x => x.Code == code);
         }
 
-        public async Task<Department> InsertAsync(InsertDepartmentRequestModel reqModel)
+        public async Task<Department> InsertAsync(DepartmentInsertRequestModel request)
         {
             var department = new Department()
             {
-                Code = reqModel.Code,
-                Name = reqModel.Name
+                Code = request.Code,
+                Name = request.Name
             };
 
             await _departmentRepository.CreateAsync(department);
@@ -52,12 +54,12 @@ namespace BLL.Services
             return department;
         }
 
-        public async Task<Department> Update(string code, UpdateDepartmentRequestModel reqModel)
+        public async Task<Department> Update(string code, DepartmentUpdateRequestModel request)
         {
             var department = await _departmentRepository.FirstOrDefaultAsync(x => x.Code == code);
             var updateDepartment = new Department()
             {
-                Name = reqModel.Name
+                Name = request.Name
             };
             await _departmentRepository.Update(updateDepartment);
             await _unitOfWork.Commit();
@@ -70,6 +72,28 @@ namespace BLL.Services
             await _departmentRepository.Delete(department);
             await _unitOfWork.Commit();
             return department;
+        }
+
+        public async Task<bool> IsCodeExists(string code)
+        {
+            var department = await _departmentRepository.FirstOrDefaultAsync(x => x.Code == code);
+            if (department == null)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        public async Task<bool> IsNameExists(string name)
+        {
+            var department = await _departmentRepository.FirstOrDefaultAsync(x=>x.Name == name);
+            if (department == null)
+            {
+                return true;
+            }
+
+            return false;
         }
     }
 }

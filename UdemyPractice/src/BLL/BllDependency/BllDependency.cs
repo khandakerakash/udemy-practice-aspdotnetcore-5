@@ -19,7 +19,7 @@ namespace BLL.BllDependency
         }
         private static void FluentValidationDependency(IServiceCollection services)
         {
-            services.AddTransient<IValidator<InsertDepartmentRequestModel>, InsertDepartmentRequestModelValidator>();
+            services.AddTransient<IValidator<DepartmentInsertRequestModel>, DepartmentInsertRequestModelValidator>();
         }
     }
 }

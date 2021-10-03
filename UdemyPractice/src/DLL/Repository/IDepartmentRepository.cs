@@ -1,11 +1,11 @@
-﻿using DLL.ApplicationDbContext;
+﻿using System.Threading.Tasks;
+using DLL.ApplicationDbContext;
 using DLL.Model;
 
 namespace DLL.Repository
 {
     public interface IDepartmentRepository : IRepositoryBase<Department>
     {
-        
     }
 
     public class DepartmentRepository : RepositoryBase<Department>, IDepartmentRepository

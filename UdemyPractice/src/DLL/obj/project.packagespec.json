@@ -1,0 +1,60 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\DLL\\DLL.csproj",
+    "projectName": "DLL",
+    "projectPath": "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\DLL\\DLL.csproj",
+    "outputPath": "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\DLL\\obj\\",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "net50"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp5.0": {
+        "projectReferences": {}
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp5.0": {
+      "dependencies": {
+        "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[5.0.10, )"
+        },
+        "Microsoft.EntityFrameworkCore.Abstractions": {
+          "target": "Package",
+          "version": "[5.0.10, )"
+        },
+        "Microsoft.EntityFrameworkCore.SqlServer": {
+          "target": "Package",
+          "version": "[5.0.10, )"
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true,
+      "frameworkReferences": {
+        "Microsoft.NETCore.App": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+    }
+  }
+}

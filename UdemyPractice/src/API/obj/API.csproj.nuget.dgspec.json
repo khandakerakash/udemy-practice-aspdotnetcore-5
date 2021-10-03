@@ -1,0 +1,228 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\API\\API.csproj": {}
+  },
+  "projects": {
+    "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\API\\API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\API\\API.csproj",
+        "projectName": "API",
+        "projectPath": "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\R041910075\\.nuget\\packages\\",
+        "outputPath": "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\R041910075\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\BLL\\BLL.csproj": {
+                "projectPath": "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\BLL\\BLL.csproj"
+              },
+              "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\DLL\\DLL.csproj": {
+                "projectPath": "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\DLL\\DLL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Versioning": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.2.2, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.2.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\BLL\\BLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\BLL\\BLL.csproj",
+        "projectName": "BLL",
+        "projectPath": "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\BLL\\BLL.csproj",
+        "packagesPath": "C:\\Users\\R041910075\\.nuget\\packages\\",
+        "outputPath": "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\BLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\R041910075\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\DLL\\DLL.csproj": {
+                "projectPath": "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\DLL\\DLL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[10.3.3, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\DLL\\DLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\DLL\\DLL.csproj",
+        "projectName": "DLL",
+        "projectPath": "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\DLL\\DLL.csproj",
+        "packagesPath": "C:\\Users\\R041910075\\.nuget\\packages\\",
+        "outputPath": "E:\\Practices\\Repos\\udemy-practice-aspdotnetcore-5\\UdemyPractice\\src\\DLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\R041910075\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
